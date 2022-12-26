@@ -15,3 +15,32 @@ df = pd.read_excel('score.xlsx')
 6  no.7  황태산  능남고  188   55   65   45  40  35      PYTHON
 7  no.8  윤대협  능남고  190  100   85   90  95  95          C#
 """
+
+# Column 선택 (index)
+
+print(df.columns[1])
+# index 1번 데이터 출력 
+
+print(df[df.columns[1]])
+# df.columns[1] = 이름
+# df[이름]
+"""
+[result]
+  이름
+ 채치수
+ 정대만
+ 송태섭
+ 서태웅
+ 강백호
+ 변덕규
+ 황태산
+ 윤대협
+"""
+
+# 슬라이싱
+
+print(df['영어'][0:5])
+# 0~4 인덱스 번호의 영어칼럼의 데이터 출력
+
+print(df[3:])
+# 3~last 인덱스 번호의 모든 칼럼의 데이터 출력
